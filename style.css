@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Quicksand:wght@300;500&display=swap");
+:root {
+  --clr-primary: #333333;
+  --clr-primary-light: #f2e8d9;
+  --clr-grey-1: #554d42;
+  --clr-grey-5: #faebd7;
+  --clr-grey-10: #0e0b21;
+  --clr-white: #fff;
+  --ff-primary: "Montserrat Alternates", sans-serif;
+  --ff-secondary: "Quicksand", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-10);
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.head {
+  min-height: 100vh;
+  background: var(--clr-grey-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--clr-grey-10);
+  padding: 0 3rem;
+}
+.head h1 {
+  text-transform: uppercase;
+}
+.head p {
+  color: var(--clr-grey-10);
+  letter-spacing: var(--spacing);
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+.head-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background: var(--clr-grey-1);
+  color: var(--clr-white);
+}
+.head-btn:hover {
+  background: transparent;
+  color: var(--clr-grey-10);
+  outline: 1px solid rgb(28, 15, 15);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 730px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+  .head {
+    background: linear-gradient(rgba(2, 1, 1, 0.6), rgba(0, 0, 0, 0.6)),
+      url(./images/cover.jpg) center/cover no-repeat;
+    position: relative;
+    overflow-x: hidden;
+    color: var(--clr-grey-5);
+  }
+  .head p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: var(--clr-grey-5);
+  }
+  .head-btn {
+    background: rgb(61, 72, 28);
+    color: var(--clr-grey-5);
+  }
+  .head-btn:hover {
+    color: var(--clr-grey-5);
+    outline: 1px solid rgb(199, 200, 196);
+  }
+}
+.section {
+  padding: 5rem 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title span {
+  color: var(--clr-grey-10);
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.section-image,
+.section-info {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+  .about-center {
+    display: flex;
+  }
+}
