@@ -155,6 +155,7 @@ p {
 .section {
   padding: 5rem 0;
 }
+
 .section-title {
   text-align: center;
   margin-bottom: 4rem;
@@ -318,6 +319,7 @@ p {
 .product-btn {
   text-align: center;
 }
+
 @media screen and (min-width: 730px) {
   .product-center {
     display: flex;
@@ -334,8 +336,8 @@ p {
     flex: 0 0 calc(33.33% - 2rem);
   }
 }
-.order {
-  width: 100%;
+.order-center {
+  /* width: 100%; */
   padding: 20px;
   background-color: var(--clr-grey-3);
   border-radius: 10px;
@@ -345,7 +347,7 @@ label {
   font-weight: bold;
   text-transform: capitalize;
   display: inline-block;
-  width: 150px;
+  width: 160px;
   margin-bottom: 10px;
   font-size: 1.05rem;
   align-items: center;
@@ -353,17 +355,55 @@ label {
 .row .quantity {
   margin-bottom: 20px;
 }
-input[type="text"],
-input[type="address"],
-input[type="number"],
-input[type="radio"] {
+input {
   background-color: #e2d1d1;
   padding: 7px;
   border-radius: var(--radius);
 }
+
 .order-btn {
-  margin-top: 35px;
-  margin-left: 175px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.xyz {
+  background-color: #e2d1d1;
+}
+#quantity1,
+#quantity2,
+#m1,
+#m2 {
+  background-color: #e2d1d1;
+}
+
+.mode,
+.quantity {
+  /* margin: 10px; */
+}
+@media screen and (min-width: 850px) {
+  .order {
+    display: flex;
+    justify-content: center;
+  }
+  .type {
+    flex: 0 0 calc(40% - 5rem);
+  }
+  .quantity {
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
+
+  .order-btn {
+    margin-top: 25px;
+    margin-left: 175px;
+  }
+
+  .order-btn {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* .form{
