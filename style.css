@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Quicksand:wght@300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Quicksand:wght@300;500&display=swap');
 :root {
   --clr-primary: #333333;
   --clr-primary-light: #f2e8d9;
@@ -8,8 +8,8 @@
   --clr-grey-5: #faebd7;
   --clr-grey-10: #0e0b21;
   --clr-white: #fff;
-  --ff-primary: "Montserrat Alternates", sans-serif;
-  --ff-secondary: "Quicksand", sans-serif;
+  --ff-primary: 'Montserrat Alternates', sans-serif;
+  --ff-secondary: 'Quicksand', sans-serif;
   --transition: all 0.4s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -279,7 +279,7 @@ ul li a {
 }
 @media screen and (max-width: 991px) {
   .section-image::before {
-    content: "";
+    content: '';
     position: absolute;
     border: 0.4rem solid rgb(148, 166, 88);
     width: 100%;
@@ -296,7 +296,7 @@ ul li a {
 }
 @media screen and (min-width: 1170px) {
   .section-image::before {
-    content: "";
+    content: '';
     position: absolute;
     border: 0.5rem solid rgb(148, 166, 88);
     width: 100%;
@@ -402,5 +402,56 @@ ul li a {
 @media screen and (min-width: 1170px) {
   .product-card {
     flex: 0 0 calc(33.33% - 2rem);
+  }
+}
+.gallery-center {
+  width: 90%;
+  margin: 0 auto;
+}
+.galley-img {
+  margin-bottom: 27px;
+}
+.gallery{
+  object-fit:contain;
+  min-height:17px;
+
+}
+.galley-img::before {
+  content: '';
+  position: absolute;
+  border: 0.15rem solid rgba(228, 228, 234, 0.94);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.galley-img {
+  position: relative;
+}
+.galley-img:hover {
+  transition: var(--transition);
+  box-shadow: 3px 2px 6px rgba(53, 26, 26, 0.6);
+  transform: scale(1.02);
+}
+@media screen and (min-width: 800px) {
+  .galley-img {
+    width: 50%;
+  }
+  .gallery-center {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .galley-img {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .galley-img {
+    width: 17%;
+    flex: 0 0 calc(33.33% - 1rem);
+  }
+  .gallery-center {
+    width: 92%;
   }
 }
