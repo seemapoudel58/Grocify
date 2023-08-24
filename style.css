@@ -411,10 +411,9 @@ ul li a {
 .galley-img {
   margin-bottom: 27px;
 }
-.gallery{
-  object-fit:contain;
-  min-height:17px;
-
+.gallery {
+  object-fit: contain;
+  min-height: 17px;
 }
 .galley-img::before {
   content: '';
@@ -454,4 +453,18 @@ ul li a {
   .gallery-center {
     width: 92%;
   }
+}
+.footer-link {
+  border: 2px solid green;
+  text-align: center;
+}
+.footer-link li a {
+  padding: 10px;
+  color: var(--clr-grey-10);
+  font-size: 1rem;
+  border: 6px solid #b98585;
+}
+.footer-link li {
+  border: 1px solid #281f63;
+  text-align: center;
 }
