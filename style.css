@@ -454,6 +454,7 @@ ul li a {
     width: 92%;
   }
 }
+
 .footers {
   background: #0c4e1f;
   /* border: 2px solid red; */
@@ -461,9 +462,7 @@ ul li a {
   padding-top: 2.5rem;
   height: 100%;
   width: 100%;
-  padding-bottom: 0.5rem;
-
-  /* padding: 1.5rem 2rem 1.5rem 2rem; */
+  padding-bottom: 0.5px;
 }
 
 .footer-link,
@@ -499,4 +498,11 @@ ul li a {
   padding-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--clr-grey-5);
+  text-align: center;
+}
+@media screen and (min-width: 1170px) {
+  .footer-icons,
+  .copyright {
+    padding-right: 55px;
+  }
 }
